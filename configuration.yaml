@@ -1,68 +1,69 @@
+# MQTT integration for Rego 1000/Pro Control 500
 # Temperature sensors
 sensor:
   - platform: mqtt
-    state_topic: "fcf5c4927772/HP/0002"
+    state_topic: "fcf5c347-placeholder/HP/0002"
     name: "Radiator Forward"
     unit_of_measurement: "c"
     icon: mdi:thermometer
   - platform: mqtt
-    state_topic: "fcf5c4927772/HP/0003"
+    state_topic: "fcf5c347-placeholder/HP/0003"
     name: "Heat Carrier Return"
     unit_of_measurement: "c"
     icon: mdi:thermometer
   - platform: mqtt
-    state_topic: "fcf5c4927772/HP/0004"
+    state_topic: "fcf5c347-placeholder/HP/0004"
     name: "Heat Carrier Forward"
     unit_of_measurement: "c"
     icon: mdi:thermometer
   - platform: mqtt
-    state_topic: "fcf5c4927772/HP/0005"
+    state_topic: "fcf5c347-placeholder/HP/0005"
     name: "Brine In / Evaporator"
     unit_of_measurement: "c"
     icon: mdi:thermometer
   - platform: mqtt
-    state_topic: "fcf5c4927772/HP/0006"
+    state_topic: "fcf5c347-placeholder/HP/0006"
     name: "Brine Out / Condenser"
     unit_of_measurement: "c"
     icon: mdi:thermometer
   - platform: mqtt
-    state_topic: "fcf5c4927772/HP/0007"
+    state_topic: "fcf5c347-placeholder/HP/0007"
     name: "Outdoor"
     unit_of_measurement: "c"
     icon: mdi:thermometer
   - platform: mqtt
-    state_topic: "fcf5c4927772/HP/0008"
+    state_topic: "fcf5c347-placeholder/HP/0008"
     name: "Indoor"
     unit_of_measurement: "c"
     icon: mdi:thermometer
   - platform: mqtt
-    state_topic: "fcf5c4927772/HP/0009"
+    state_topic: "fcf5c347-placeholder/HP/0009"
     name: "Warm water"
     unit_of_measurement: "c"
     icon: mdi:thermometer
   - platform: mqtt
-    state_topic: "fcf5c4927772/HP/000B"
+    state_topic: "fcf5c347-placeholder/HP/000B"
     name: "Hot gas"
     unit_of_measurement: "c"
     icon: mdi:thermometer
   - platform: mqtt
-    state_topic: "fcf5c4927772/HP/000E"
+    state_topic: "fcf5c347-placeholder/HP/000E"
     name: "Air intake"
     unit_of_measurement: "c"
     icon: mdi:thermometer
   - platform: mqtt
-    state_topic: "fcf5c4927772/HP/0107"
+    state_topic: "fcf5c347-placeholder/HP/0107"
     name: "Heating setpoint"
     unit_of_measurement: "c"
     icon: mdi:thermometer
   - platform: mqtt
-    state_topic: "fcf5c4927772/HP/0120"
+    state_topic: "fcf5c347-placeholder/HP/0120"
     name: "Heating setpoint"
     unit_of_measurement: "c"
     icon: mdi:thermometer
 # Status sensors
   - platform: mqtt
-    state_topic: "fcf5c4927772/HP/3104"
+    state_topic: "fcf5c347-placeholder/HP/3104"
     name: "Additional heat status"
     unit_of_measurement: "%"
     icon: mdi:flash
@@ -71,67 +72,67 @@ sensor:
 # Binary sensors
 binary_sensor:
   - platform: mqtt
-    state_topic: "fcf5c4927772/HP/1A01"
+    state_topic: "fcf5c347-placeholder/HP/1A01"
     name: "Compressor"
     payload_on: "1"
     payload_off: "0"
   - platform: mqtt
-    state_topic: "fcf5c4927772/HP/1A04"
+    state_topic: "fcf5c347-placeholder/HP/1A04"
     name: "	Pump Cold circuit"
     payload_on: "1"
     payload_off: "0"
   - platform: mqtt
-    state_topic: "fcf5c4927772/HP/1A05"
+    state_topic: "fcf5c347-placeholder/HP/1A05"
     name: "Pump Heat circuit"
     payload_on: "1"
     payload_off: "0"
   - platform: mqtt
-    state_topic: "fcf5c4927772/HP/1A06"
+    state_topic: "fcf5c347-placeholder/HP/1A06"
     name: "Pump Radiator"
     payload_on: "1"
     payload_off: "0"
   - platform: mqtt
-    state_topic: "fcf5c4927772/HP/1A07"
+    state_topic: "fcf5c347-placeholder/HP/1A07"
     name: "Switch valve 1"
     payload_on: "1"
     payload_off: "0"
   - platform: mqtt
-    state_topic: "fcf5c4927772/HP/1A08"
+    state_topic: "fcf5c347-placeholder/HP/1A08"
     name: "Switch valve 2"
     payload_on: "1"
     payload_off: "0"
   - platform: mqtt
-    state_topic: "fcf5c4927772/HP/1A09"
+    state_topic: "fcf5c347-placeholder/HP/1A09"
     name: "Fan"
     payload_on: "1"
     payload_off: "0"
   - platform: mqtt
-    state_topic: "fcf5c4927772/HP/1A0A"
+    state_topic: "fcf5c347-placeholder/HP/1A0A"
     name: "High Pressostat"
     payload_on: "1"
     payload_off: "0"
   - platform: mqtt
-    state_topic: "fcf5c4927772/HP/1A0B"
+    state_topic: "fcf5c347-placeholder/HP/1A0B"
     name: "	Low Pressostat"
     payload_on: "1"
     payload_off: "0"
   - platform: mqtt
-    state_topic: "fcf5c4927772/HP/1A0C"
+    state_topic: "fcf5c347-placeholder/HP/1A0C"
     name: "Heating cable"
     payload_on: "1"
     payload_off: "0"
   - platform: mqtt
-    state_topic: "fcf5c4927772/HP/1A0D"
+    state_topic: "fcf5c347-placeholder/HP/1A0D"
     name: "Crankcase heater"
     payload_on: "1"
     payload_off: "0"
   - platform: mqtt
-    state_topic: "fcf5c4927772/HP/1A20"
+    state_topic: "fcf5c347-placeholder/HP/1A20"
     name: "Alarm"
     payload_on: "1"
     payload_off: "0"
   - platform: mqtt
-    state_topic: "fcf5c4927772/HP/1A21"
+    state_topic: "fcf5c347-placeholder/HP/1A21"
     name: "Pump Radiator 2"
     payload_on: "1"
     payload_off: "0"
@@ -140,63 +141,63 @@ binary_sensor:
 climate:
   - platform: mqtt
     modes:
-    current_temperature_topic: "fcf5c4927772/HP/0203"
-    temperature_state_topic: "fcf5c4927772/HP/0203"
-    temperature_command_topic: "fcf5c4927772/HP/SET/0203"
+    current_temperature_topic: "fcf5c347-placeholder/HP/0203"
+    temperature_state_topic: "fcf5c347-placeholder/HP/0203"
+    temperature_command_topic: "fcf5c347-placeholder/HP/SET/0203"
     min_temp: 13
     max_temp: 26
     temp_step: .1
     name: "Room temp setpoint"
   - platform: mqtt
     modes:
-    current_temperature_topic: "fcf5c4927772/HP/2204"
-    temperature_state_topic: "fcf5c4927772/HP/2204"
-    temperature_command_topic: "fcf5c4927772/HP/SET/2204"
+    current_temperature_topic: "fcf5c347-placeholder/HP/2204"
+    temperature_state_topic: "fcf5c347-placeholder/HP/2204"
+    temperature_command_topic: "fcf5c347-placeholder/HP/SET/2204"
     min_temp: 0
     max_temp: 10
     temp_step: .1
     name: "Room sensor influence"
   - platform: mqtt
     modes:
-    current_temperature_topic: "fcf5c4927772/HP/0205"
-    temperature_state_topic: "fcf5c4927772/HP/0205"
-    temperature_command_topic: "fcf5c4927772/HP/SET/0205"
+    current_temperature_topic: "fcf5c347-placeholder/HP/0205"
+    temperature_state_topic: "fcf5c347-placeholder/HP/0205"
+    temperature_command_topic: "fcf5c347-placeholder/HP/SET/0205"
     min_temp: 20
     max_temp: 50
     temp_step: .1
     name: "First Heat setting 1 Curve Left setting"
   - platform: mqtt
     modes:
-    current_temperature_topic: "fcf5c4927772/HP/0206"
-    temperature_state_topic: "fcf5c4927772/HP/0206"
-    temperature_command_topic: "fcf5c4927772/HP/SET/0206"
+    current_temperature_topic: "fcf5c347-placeholder/HP/0206"
+    temperature_state_topic: "fcf5c347-placeholder/HP/0206"
+    temperature_command_topic: "fcf5c347-placeholder/HP/SET/0206"
     min_temp: 20
     max_temp: 50
     temp_step: .1
     name: "First Heat setting 2 Curve Right setting"
   - platform: mqtt
     modes:
-    current_temperature_topic: "fcf5c4927772/HP/0222"
-    temperature_state_topic: "fcf5c4927772/HP/0222"
-    temperature_command_topic: "fcf5c4927772/HP/SET/0222"
+    current_temperature_topic: "fcf5c347-placeholder/HP/0222"
+    temperature_state_topic: "fcf5c347-placeholder/HP/0222"
+    temperature_command_topic: "fcf5c347-placeholder/HP/SET/0222"
     min_temp: 20
     max_temp: 50
     temp_step: .1
     name: "Second Heat setting 1 Curve Left setting"
   - platform: mqtt
     modes:
-    current_temperature_topic: "fcf5c4927772/HP/0223"
-    temperature_state_topic: "fcf5c4927772/HP/0223"
-    temperature_command_topic: "fcf5c4927772/HP/SET/0223"
+    current_temperature_topic: "fcf5c347-placeholder/HP/0223"
+    temperature_state_topic: "fcf5c347-placeholder/HP/0223"
+    temperature_command_topic: "fcf5c347-placeholder/HP/SET/0223"
     min_temp: 20
     max_temp: 50
     temp_step: .1
     name: "Second Heat setting 2 Curve Left setting"
   - platform: mqtt
     modes:
-    current_temperature_topic: "fcf5c4927772/HP/0219"
-    temperature_state_topic: "fcf5c4927772/HP/0219"
-    temperature_command_topic: "fcf5c4927772/HP/SET/0219"
+    current_temperature_topic: "fcf5c347-placeholder/HP/0219"
+    temperature_state_topic: "fcf5c347-placeholder/HP/0219"
+    temperature_command_topic: "fcf5c347-placeholder/HP/SET/0219"
     min_temp: 20
     max_temp: 50
     temp_step: .1
@@ -205,7 +206,8 @@ climate:
 #Heat pump numbered settings
 number:
   - platform: mqtt
-    state_topic: "fcf5c4927772/HP/6209"
-    command_topic: "fcf5c4927772/HP/SET/6209"
+    state_topic: "fcf5c347-placeholder/HP/6209"
+    command_topic: "fcf5c347-placeholder/HP/SET/6209"
     name: "Extra hot water"
     icon: mdi:progress-clock
+# End MQTT integration for Rego 1000/Pro Control 500
